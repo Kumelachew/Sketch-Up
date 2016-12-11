@@ -1,6 +1,7 @@
 # The Odin Project: Javascript/JQuery Project
 
 Features implemented:
+
 1. Create a web page with a 16x16 grid of square divs. The divs were created
 dynamically through Jquery.
 2. Implemented a hover effect so it changes the color of the square when your mouse passes over it, leaving a (pixelated) trail through your grid like a pen would.
