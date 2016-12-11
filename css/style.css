@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Chewy');
+
+body {
+  margin: 0 auto;
+}
+
+h1 {
+    color: #FF5252;
+    font-family: 'Pacifico', cursive;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+.grid {
+    margin: 10px auto;
+}
+
+.container {
+    border-style: solid;
+    border-color: #FF5252;
+    margin: 0 auto;
+    padding: 0;
+    width: 600px;
+    height: 600px;
+    border-width: thin;
+}
+
+.row {
+    width: auto;
+}
+.column {
+    margin: 0px;
+    outline: 1px solid #FF5252;;
+    display: inline-block;
+    float: left;
+    background: #FFFFFF;
+    border-color: #FF5252;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    margin: 0 auto;
+}
+.btn {
+  background: #FF5252;
+  background-image: -webkit-linear-gradient(top, #FF5252, #FF5252);
+  background-image: -moz-linear-gradient(top, #FF5252, #FF5252);
+  background-image: -ms-linear-gradient(top, #FF5252, #FF5252);
+  background-image: -o-linear-gradient(top, #FF5252, #FF5252);
+  background-image: linear-gradient(to bottom, #FF5252, #FF5252);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Chewy', cursive;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  display: flex;
+  margin: 5px;
+}
+
+.btn:hover {
+  background: #ff8787;
+  background-image: -webkit-linear-gradient(top, #ff8787, #ff7070);
+  background-image: -moz-linear-gradient(top, #ff8787, #ff7070);
+  background-image: -ms-linear-gradient(top, #ff8787, #ff7070);
+  background-image: -o-linear-gradient(top, #ff8787, #ff7070);
+  background-image: linear-gradient(to bottom, #ff8787, #ff7070);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.color-options {
+    display: block;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
