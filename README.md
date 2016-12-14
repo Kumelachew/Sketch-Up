@@ -8,4 +8,6 @@ dynamically through JQuery.
 3. Added a button to the top of the screen which will clear the current grid. I also added a new grid buttom that will send the user a popup asking for how many squares per side to make a new grid. Once entered, the new grid will be generated in the same total space as before (e.g. 960px wide).
 4. Added a drop down list for the user to be able to pick a color.
 
+View this prject in the browser [here](https://kumelachew.github.io/Sketch-Up/).
+
 You can find more information about the Odin project [here](https://www.google.com).

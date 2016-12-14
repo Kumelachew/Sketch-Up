@@ -22,10 +22,24 @@ function drawGrid(rows,columns) {
     }
 };
 
-function changeContainerColorOnMouseEnter(color) {
+function trail(color) {
+    var opacity = 0;
+
     $(".container").on('mouseenter', '.column', function() {
-        $(this).css("background-color",color);
-    })
+        opacity += 0.1;
+
+        if (opacity > 0 && opacity < 1) {
+            $(this).css("opacity", opacity);
+            $(this).css("background-color",color);
+        }
+        else if (opacity >= 1) {
+            opacity = 0.1;
+            $(this).css("opacity", opacity);
+            $(this).css("background-color",color);
+        }
+
+    });
+
 };
 
 
@@ -66,25 +80,36 @@ $(document).ready(function () {
 
         switch(selectedColor) {
             case "black":
-                changeContainerColorOnMouseEnter("black");
+                trail("black");
                 break;
             case "green":
-                changeContainerColorOnMouseEnter("green");
+                trail("green");
                 break;
             case "yellow":
-                changeContainerColorOnMouseEnter("yellow");
+                trail("yellow");
                 break;
             case "red":
-                changeContainerColorOnMouseEnter("red");
+                trail("red");
                 break;
             case "random":
+                var opacity = 0;
                 $(".container").on('mouseenter', '.column', function() {
                     var r = Math.floor(Math.random() * (256));
                     var g = Math.floor(Math.random() * (256));
                     var b = Math.floor(Math.random() * (256));
                     var randomColor =  'rgb('+ r +','+ g +','+ b +')';
 
-                    changeContainerColorOnMouseEnter(randomColor);
+                    opacity += 0.1;
+
+                    if (opacity > 0 && opacity < 1) {
+                        $(this).css("opacity", opacity);
+                        $(this).css("background-color",randomColor);
+                    }
+                    else if (opacity >= 1) {
+                        opacity = 0.1;
+                        $(this).css("opacity", opacity);
+                        $(this).css("background-color",randomColor);
+                    }
                 });
 
                 break;
