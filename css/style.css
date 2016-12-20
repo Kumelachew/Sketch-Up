@@ -81,6 +81,17 @@ h1 {
     outline: none;
 }
 
+label {
+  color: #FF5252;
+  font-family: 'Chewy', cursive;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#color-options {
+  margin-left: 15px;
+}
+
 .color-options {
     display: block;
     margin: 5px auto;

@@ -53,6 +53,7 @@ $(document).ready(function () {
     // clear the grid on click
     $(".clear-grid").on('click', function(event) {
         $(".column").css("background","#FFFFFF");
+        $(".column").css("opacity","1");
     });
 
     // user wants to create a new grid
@@ -79,6 +80,12 @@ $(document).ready(function () {
         var selectedColor = $("#color-options option:selected").val();
 
         switch(selectedColor) {
+            case "eraser":
+                $(".container").on('mouseenter', '.column', function() {
+                    $(this).css("background","#FFFFFF");
+                    $(this).css("opacity","1");
+                });
+                break;
             case "black":
                 trail("black");
                 break;
